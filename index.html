@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,28 +8,31 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/d8947ffdf2.js" crossorigin="anonymous"></script>
+    <script defer src="main.js"></script>
 </head>
+
 <body>
-    <section class="list">
-        <header class="header">Shopping List</header>
-        <ul class="items">
-            <li class="item_row">
-                <div class="item">
-                    <sapn class="item_name">Egg</sapn>
+    <div class="wrap">
+        <div class="header">shopping List</div>
+        <ul class="list">
+            <!-- <li class="item">
+                <div class="items">
+                    <span class="item_name">Egg</span>
                     <button class="item_delete">
-                        <i class="fa-solid fa-trash-can"></i>
+                        <i class="fa-sharp fa-solid fa-delete-left"></i>
                     </button>
                 </div>
-                <div class="item_divider"></div>
-            </li>
+                <div class="line"></div>
+            </li> -->
         </ul>
-        <footer class="footer">
-            <input type="text" class="footer_input">
-            <button class="footer_button">
+        <div class="footer">
+            <input type="text" class="item_input" onkeydown="if(event.keyCode==13)itemAdd();">
+            <button class="item_add">
                 <i class="fa-solid fa-plus"></i>
             </button>
-        </footer>
-    </section>
-    <script src="main.js"></script>
+        </div>
+    </div>
+    <!-- <script src="main_개선.js"></script> -->
 </body>
+
 </html>
